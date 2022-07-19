@@ -18,7 +18,7 @@ class modOAuth {
 	}
 
 	function generateRequest($data) {
-	        if (_OAUTH_METHOD == 'certificate') {
+	      /*  if (_OAUTH_METHOD == 'certificate') {
                         // Use the certificate specified
                         //https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials
                         $cert = file_get_contents(_OAUTH_AUTH_CERTFILE);
@@ -39,10 +39,10 @@ class modOAuth {
                         $caSignature = $this->base64UrlEncode($caSignature);
                         $clientAssertion = $caData . '.' . $caSignature;
                         return $data . '&client_assertion=' . $clientAssertion . '&client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer';
-                } else {
+                } else {*/
 			// Use the client secret instead
                         return $data . '&client_secret=' . urlencode(_OAUTH_SECRET);
-                }
+               // }
 
 	}
 

@@ -25,8 +25,9 @@ define('_OAUTH_SCOPE', 'openid%20offline_access%20profile%20user.read');
 define('_OAUTH_METHOD', 'certificate');
 
 define('_OAUTH_SECRET', 'qBa8Q~GW5lqirV0qFif.GrMTMhg7S36vVKW-pbYV');
-define('_OAUTH_AUTH_CERTFILE', '/path/to/certificate.crt');
-define('_OAUTH_AUTH_KEYFILE', '/path/to/privatekey.pem');
+//change this path://
+define('_OAUTH_AUTH_CERTFILE', '/etc/ssl/certs/nginx-selfsigned.crt');
+define('_OAUTH_AUTH_KEYFILE', '/etc/ssl/private/nginx-selfsigned.key');
 
 // on Windows, the certificate paths should be in the form c:/path/to/cert.crt
 

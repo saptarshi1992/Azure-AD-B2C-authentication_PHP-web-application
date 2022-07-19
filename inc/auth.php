@@ -4,15 +4,7 @@
 
 
 <?php
-/* auth.php Azure AD oAuth Class
- *
- * Katy Nicholson, last updated 17/11/2021
- *
- * https://github.com/CoasterKaty
- * https://katytech.blog/
- * https://twitter.com/coaster_katy
- *
- */
+
 
 require_once dirname(__FILE__) . '/mysql.php';
 require_once dirname(__FILE__) . '/oauth.php';
